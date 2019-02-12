@@ -1,0 +1,389 @@
+{
+  "settings": {
+    "name": "Steelbeat.info",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "lightamp",
+      "title": "LightAMP",
+      "styling": {
+        "primaryColor": "#F9D5BD",
+        "secondaryColor": "#bbe0e2",
+        "successColor": "#c6e2ba",
+        "infoColor": "#f5edf6",
+        "warningColor": "#7F7E7E",
+        "dangerColor": "#fe8b8b",
+        "mainFont": "Roboto",
+        "display1Font": "Reem Kufi",
+        "display1Size": 6,
+        "display2Font": "Reem Kufi",
+        "display2Size": "3",
+        "display5Font": "Reem Kufi",
+        "display5Size": 2.25,
+        "display6Font": "Roboto",
+        "display6Size": 1.3,
+        "display7Font": "Roboto",
+        "display7Size": 1.1,
+        "display4Font": "Reem Kufi",
+        "display4Size": 1,
+        "isRoundedButtons": false,
+        "isScrollToTopButton": false,
+        "arrowColor": "#F9D5BD"
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.9.2",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/star-64x64.png",
+    "noImageResize": "",
+    "google-analytics": "",
+    "siteUrl": "undefined",
+    "cookiesAlert": "",
+    "gdpr": "",
+    "сanonical-url": "http://steelbeat.info",
+    "uniqCompNum": 11,
+    "versionPublish": "4.9.3",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Шоу барабанщиков STEELBEAT",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".mbr-row": {
+              "-webkit-align-items": "center",
+              "align-items": "center"
+            },
+            "& when (@flexDirection)": {
+              ".mbr-row": {
+                "-webkit-flex-direction": "row-reverse",
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".image-block": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center"
+            },
+            ".text-block": {
+              "padding": "2rem"
+            },
+            "amp-img": {
+              "width": "100%",
+              "margin": "0 auto",
+              "text-align": "center"
+            },
+            "& when not (@showButtons)": {
+              ".mbr-text": {
+                "padding-bottom": "0",
+                "margin-bottom": "0"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-section-subtitle, .mbr-text": {
+                "text-align": "center"
+              },
+              ".text-block": {
+                "padding": "2rem 1rem"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".image-block": {
+                "width": "50%"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-block": {
+                "width": "100%"
+              }
+            }
+          },
+          "_name": "features14",
+          "_customHTML": "<section class=\"features14\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Верх\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"5\" step=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Низ\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"5\" step=\"1\">\n        <input type=\"checkbox\" title=\"Заголовок\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\" checked=\"\">\n        <input type=\"checkbox\" title=\"Медиа слева/справа\" name=\"flexDirection\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Фоновый цвет\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" checked=\"\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Цвет\" name=\"overlayColor\" value=\"#ffffff\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n        <input type=\"range\" inline=\"\" title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center main-row\">\n            <div class=\"image-block\">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/steelbeat-560x315.jpg\" layout=\"responsive\" width=\"769.7777777777777\" height=\"433\" alt=\"Шоу барабанщиков\" class=\"mobirise-loader\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/steelbeat-560x315.jpg\" alt=\"Шоу барабанщиков\" title=\"Шоу барабанщиков\">\n                </amp-img>\n            </div>\n            <div class=\"text-block mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-6\">\n                <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold align-left\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">STEELBEAT</h2>\n                <h3 class=\"mbr-section-subtitle mbr-fonts-style align-left\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Шоу барабанщиков</h3>\n                <p class=\"mbr-fonts-style mbr-text align-left\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Коллектив барабанщиков основан в 2004 году. За этот, не малый период времени ансамбль завоевал славу как в Украине, так и за ее пределами. Основная деятельность группы - это создание энергичной музыки и впечетляющего шоу, используя не просто ударные, музыкальные инструменты, а также обычные железные бочки, машинные диски, цепи и многое другое. То что создают STEELBEAT не оставляет ни одного человека безразличным. Они современны, зажигательны, энергичны, актуальны.&nbsp;<br></p>\n                <div mbr-buttons=\"\" class=\"mbr-section-btn align-left\" mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-danger\" href=\"index.html#form2-7\" data-app-placeholder=\"Type Text\">Заказать выступление</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rhKBaxg4p9",
+          "_anchor": "features14-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "background-color": "@bgColor",
+            "& when not (@fullWidth)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            ".video-title": {
+              "width": "100%"
+            },
+            ".mbr-text": {
+              "margin": "0",
+              "color": "#7f7e7e"
+            },
+            "& when (@showTitle), (@showSubtitle)": {
+              "& when (@fullWidth)": {
+                ".video-title": {
+                  "padding": "1rem 0"
+                }
+              },
+              "& when not (@fullWidth)": {
+                ".video-title": {
+                  "padding-bottom": "3rem"
+                }
+              }
+            },
+            ".video-block": {
+              "margin": "auto",
+              "width": "~\"@{videoSize}%\"",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".video-block": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "youtube2",
+          "_customHTML": "<section class=\"youtube2\" group=\"Images & Videos\" plugins=\"amp-main,amp-youtube\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"checkbox\" title=\"Полная шира\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Верх\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Низ\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Заголовок\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\">\n        <input type=\"range\" inline title=\"Ширина\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"75\" step=\"1\" condition=\"fullWidth == false\">\n        <input type=\"text\" title=\"Youtube видео URL\" name=\"videoUrl\" value=\"https://www.youtube.com/watch?v=Eq1Kixhajdg\">\n        <input type=\"color\" title=\"Фоновый цвет\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': fullWidth == false}\">\n        <div class=\"video-title mbr-col-sm-12 align-center\">\n            <h2 class=\"mbr-section-title mbr-fonts-style mbr-light\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .video-title\">\n                Youtube видео\n            </h2>\n            <h3 class=\"mbr-fonts-style mbr-text\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-6\" data-app-selector=\".mbr-text\">\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n            </h3>\n        </div>\n        <div class=\"video-block\">\n            <amp-youtube width=\"16\" height=\"9\" layout=\"responsive\" data-videoid=\"lBTCB7yLs8Y\" class=\"mobirise-loader\">\n                <div placeholder class=\"placeholder\"></div>\n            </amp-youtube>\n        </div>\n    </div>\n</section>",
+          "_cid": "rhKDmHfP6P",
+          "_anchor": "youtube2-4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".mbr-row": {
+                "-webkit-flex-direction": "row-reverse",
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-subtitle": {
+              "color": "#a2a0a0"
+            },
+            ".mbr-text": {
+              "padding": "0",
+              "margin": "0"
+            }
+          },
+          "_name": "content8",
+          "_customHTML": "<section class=\"content8\" group=\"Content\" plugins=\"amp-main\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Верх\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Низ\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        \n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Обратный контент\" name=\"reverseContent\">\n        <input type=\"color\" title=\"Фоновый цвет\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-5 mbr-col-xl-4\">\n                <h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-title\">Деятельность коллектива очень разнообразна</h2>\n                <h3 class=\"mbr-section-subtitle mbr-fonts-style mbr-light\" mbr-theme-style=\"display-6\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n                </h3>\n            </div>\n            <div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-5 mbr-col-xl-4\">\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Начиная просто с железных бочек, ансамбль развивался создавая шоу на барабанах, этнической перкусси, украинских народных тулумбасах, а также новое движение барабанных круг, который не просто удивляет зрителя зрелищем, но и заставляет вовлечься самому. <br>Коллектив принимал участие в таких мероприятиях как: «Джаз-карнавал в Одессе» (2006), открытие MTV Ukraine (2007), \"Ukrainian Music Award\" (2008), Tuborg GreenFest (2008), передача \"Минута славы\" (2009), Первый Одесский международный кинофестиваль (2010), Парк Киевская Русь (2010 - 2011), финал украинского конкурса Eurovision (2011) (совместно с группой Бряц-band) и многих других.\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rhKGkXGEoW",
+          "_anchor": "content8-a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".carousel-img": {
+              "width": "100%",
+              "text-align": "center",
+              "margin": "0"
+            },
+            ".container-fluid": {
+              "max-width": "100%",
+              "padding": "0"
+            },
+            "& when (@showTitle)": {
+              ".mbr-section-title": {
+                "line-height": "1"
+              }
+            },
+            "& when (@showSubtitle)": {
+              ".mbr-text": {
+                "padding-bottom": "0",
+                "margin": "0",
+                "color": "#a2a0a0"
+              }
+            },
+            "& when (@showTitle), (@showSubtitle)": {
+              ".text-block": {
+                "margin": "auto"
+              },
+              ".slider-box": {
+                "margin-top": "3rem"
+              }
+            }
+          },
+          "_name": "carousel1",
+          "_customHTML": "<section class=\"carousel1 slider\" group=\"Carousels &amp; Sliders\" plugins=\"amp-main, amp-carousel\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Полный экран\" name=\"fullScreen\">\n        <input type=\"range\" inline=\"\" title=\"Верх\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Низ\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Заголовок\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\">\n        <select title=\"Изображения\" name=\"imagesAmount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\" selected=\"\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Фоновый цвет\" value=\"#ffffff\" selected=\"\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" checked=\"\" condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Цвет\" name=\"overlayColor\" value=\"#ffffff\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n        <input type=\"range\" inline=\"\" title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n    <div class=\"container-fluid\">\n        <div class=\"text-block mbr-col-sm-12 mbr-col-md-10\" mbr-if=\"showTitle || showSubtitle\">\n            <h2 class=\"mbr-section-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                 Карусель с изображениями\n            </h2>\n            <p class=\"mbr-fonts-style mbr-text align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-text\">\n                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit omnis us, pur! Molestiae voluptate ipsam ab earum unde?\n            </p>\n        </div>\n        <div class=\"slider-box\"><amp-carousel class=\"carousel\" height=\"400\" layout=\"fixed-height\" type=\"carousel\"><amp-img class=\"carousel-img mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/steelbeat-1-600x396.jpg\" height=\"400\" width=\"606.060606060606\" alt=\"SteelBeat\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/steelbeat-1-600x396.jpg\" alt=\"SteelBeat\" title=\"SteelBeat\">\n                </amp-img><amp-img class=\"carousel-img mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/steelbeat-2-600x403.jpg\" mbr-class=\"{'super-hide': imagesAmount < 2}\" height=\"400\" width=\"595.5334987593052\" alt=\"SteelBeat\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/steelbeat-2-600x403.jpg\" alt=\"SteelBeat\" title=\"SteelBeat\">\n                </amp-img><amp-img class=\"carousel-img mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/steelbeat-3-600x396.jpg\" mbr-class=\"{'super-hide': imagesAmount < 3}\" height=\"400\" width=\"606.060606060606\" alt=\"SteelBeat\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/steelbeat-3-600x396.jpg\" alt=\"SteelBeat\" title=\"SteelBeat\">\n                </amp-img><amp-img class=\"carousel-img mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/steelbeat-4-600x400.jpg\" mbr-class=\"{'super-hide': imagesAmount < 4}\" height=\"400\" width=\"600\" alt=\"SteelBeat\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/steelbeat-4-600x400.jpg\" alt=\"SteelBeat\" title=\"SteelBeat\">\n                </amp-img><amp-img class=\"carousel-img mobirise-loader\" src=\"@PROJECT_PATH@/assets/images/steelbeat-5-600x398.jpg\" mbr-class=\"{'super-hide': imagesAmount < 5}\" height=\"400\" width=\"603.0150753768845\" alt=\"SteelBeat\">\n                    <div placeholder=\"\" class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/steelbeat-5-600x398.jpg\" alt=\"SteelBeat\" title=\"SteelBeat\">\n                </amp-img></amp-carousel>\n            \n        </div>\n    </div>\n</section>",
+          "_cid": "rhLKszSjGn",
+          "_anchor": "carousel1-b",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "label.input-label": {
+              "display": "flex",
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column",
+              "padding": ".75rem .5rem",
+              "margin": "0",
+              "width": "100%"
+            },
+            "label.area": {
+              "padding": ".75rem .5rem",
+              "width": "100%",
+              "margin": "0"
+            },
+            "input": {
+              "font": "inherit"
+            },
+            "textarea": {
+              "width": "100%",
+              "max-width": "100%",
+              "font": "inherit"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#7f7e7e"
+            },
+            "@media (max-width: 991px)": {
+              "label.input-label": {
+                "width": "100%"
+              }
+            }
+          },
+          "_name": "form2",
+          "_customHTML": "<section class=\"form2\" group=\"Forms\" plugins=\"amp-main, amp-form, amp-mustache\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Верх\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Низ\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Заголовок\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Фоновый цвет\" value=\"#ffffff\" selected> \n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Цвет\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <h2 mbr-if=\"showTitle\" class=\"align-center mbr-fonts-style\" mbr-theme-style=\"display-2\">Заказать выступление</h2>\n        <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center mbr-fonts-style\" mbr-theme-style=\"display-6\" data-app-selector=\".mbr-section-subtitle\">\n            Отправьте запрос, и мы свяжемся с вами\n        </h3>\n\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div mbr-form class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-6\">\n                <form class=\"mbr-form\" action=\"26071972@rambler.ru\" method=\"post\" name=\"Mobirise Form\" target=\"_top\" novalidate>\n                    <div submit-success>\n                        <template data-form-alert type=\"amp-mustache\">Сообщение отправлено!</template>\n                    </div>\n                    <div submit-error>\n                        <template data-form-alert type=\"amp-mustache\">Сообщение отправлено!</template>\n                    </div>\n                    <div class=\"fieldset\">\n                        <label class=\"input-label\">\n                            <input type=\"hidden\" name=\"form[data][1][0]\" value=\"Name\">\n                            <input type=\"text\" name=\"form[data][1][1]\" data-form-field=\"Name\" placeholder=\"Имя\" required>\n                        </label>\n                        <label class=\"input-label\">\n                            <input type=\"hidden\" name=\"form[data][2][0]\" value=\"Phone\">\n                            <input type=\"phone\" name=\"form[data][2][1]\" data-form-field=\"Phone\" placeholder=\"Телефон\" required>\n                        </label>\n                        <label class=\"input-label\">\n                            <input type=\"hidden\" name=\"form[data][0][0]\" value=\"Email\">\n                            <input type=\"email\" name=\"form[data][0][1]\" data-form-field=\"Email\" placeholder=\"Email\" required>\n                        </label>\n                        <label class=\"area\">\n                            <input type=\"hidden\" name=\"form[data][3][0]\" value=\"Message\">\n                            <textarea name=\"form[data][3][1]\" rows=\"7\" data-form-field=\"Message\" placeholder=\"Место, дата, время выступления и пожелания.\"></textarea>\n                        </label>\n                        <span mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\" class=\"input-group-btn\"><a type=\"submit\" class=\"btn btn-form btn-danger\" data-app-placeholder=\"Type Text\">ОТПРАВИТЬ</a></span>\n                    </div>\n                </form>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rhKE3AkoKs",
+          "_anchor": "form2-7",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-row": {
+              "-webkit-align-items": "center",
+              "align-items": "center"
+            },
+            ".mbr-text": {
+              "color": "#7f7e7e",
+              "margin": "0",
+              "padding": "0"
+            },
+            ".icons-wrap": {
+              "display": "flex",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            "& when (@showIcons)": {
+              ".social-list": {
+                "padding-left": "0",
+                "list-style": "none",
+                ".amp-iconfont": {
+                  "color": "@iconsColor",
+                  "font-size": "~\"@{iconsSize}rem\""
+                },
+                ".soc-item": {
+                  ".icon-wrap": {
+                    "display": "inline-block",
+                    "width": "~\"@{iconsSize}rem\"",
+                    "height": "~\"@{iconsSize}rem\""
+                  },
+                  "margin": "0 .5rem",
+                  "display": "inline-block",
+                  "a:hover": {
+                    ".amp-iconfont": {
+                      "color": "darken(@iconsColor, 20%)",
+                      "svg": {
+                        "fill": "darken(@iconsColor, 20%)"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".pbtm": {
+                "padding-bottom": "1.5rem"
+              }
+            }
+          },
+          "_name": "footer3",
+          "_customHTML": "<section class=\"footer3\" group=\"Footers\" plugins=\"amp-main\" global>\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Верх\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Низ\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Элемент 1\" name=\"showFirst\">\n        <input type=\"checkbox\" title=\"Элемент 2\" name=\"showSecond\" checked>\n        <input type=\"checkbox\" title=\"Значки\" name=\"showIcons\" checked>\n        <input type=\"range\" inline title=\"Значков\" name=\"iconsCount\" min=\"1\" max=\"8\" step=\"1\" value=\"1\" condition=\"showIcons\">\n        <input type=\"range\" inline title=\"Размер\" name=\"iconsSize\" min=\"1.5\" max=\"3.5\" step=\"0.1\" value=\"2\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Цвет\" name=\"iconsColor\" value=\"#b63030\" condition=\"showIcons\">\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Фоновый цвет\" value=\"#ffffff\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center align-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 text1\" mbr-class=\"{'mbr-col-lg-6': !(showIcons && showSecond),\n                             'mbr-col-lg-4': showIcons && showSecond,\n                             'pbtm': showIcons || showSecond}\" mbr-if=\"showFirst\">\n                <p class=\"links mbr-text mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-7\" data-app-selector=\".links\"> ПОДДЕРЖИВАЕТСЯ \n                    <a href=\"#\" class=\"text-secondary\">MOBIRISE.COM</a>\n                </p>\n            </div>\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 text2\" mbr-class=\"{'mbr-col-lg-6': !(showIcons && showFirst),\n                             'mbr-col-lg-4': showIcons && showFirst,\n                             'pbtm': showIcons}\" mbr-if=\"showSecond\">\n                <p class=\"copyright mbr-text mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright\"><span style=\"font-weight: normal;\">\n                    Шоу барабанщиков © SteelBeat 2011-2019\n                </span></p>\n            </div>\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 icons-wrap\" mbr-class=\"{'mbr-col-lg-6': !(showSecond && showFirst),\n                             'mbr-col-lg-4': showSecond && showFirst}\" mbr-if=\"showIcons\">\n                <div class=\"social-list\">\n                    <div class=\"soc-item\">\n                        <a href=\"https://www.youtube.com/channel/UCftmUZP2ISmtduaRyg_SHVg\" target=\"_blank\" class=\"icon-wrap\">\n                            <span mbr-icon class=\"amp-iconfont fa-youtube-play fa\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"iconsCount > 1\">\n                        <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" class=\"icon-wrap\">\n                            <span mbr-icon class=\"amp-iconfont fa-facebook fa\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"iconsCount > 2\">\n                        <a href=\"https://plus.google.com/u/0/+Mobirise\" target=\"_blank\" class=\"icon-wrap\">\n                            <span mbr-icon class=\"amp-iconfont fa-google-plus fa\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\" mbr-if=\"iconsCount > 3\">\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" class=\"icon-wrap\">\n                            <span mbr-icon class=\"amp-iconfont fa-instagram fa\"></span>\n                        </a>\n                    </div>\n                     <div class=\"soc-item\" mbr-if=\"iconsCount > 4\">\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" class=\"icon-wrap\">\n                            <span mbr-icon class=\"amp-iconfont fa-instagram fa\"></span>\n                        </a>\n                    </div>\n                     <div class=\"soc-item\" mbr-if=\"iconsCount > 5\">\n                        <a href=\"https://instagram.com/mobirise\" target=\"_blank\" class=\"icon-wrap\">\n                            <span mbr-icon class=\"amp-iconfont fa-instagram fa\"></span>\n                        </a>\n                    </div>\n                </div>\n            </div>    \n        </div>\n    </div>\n</section>",
+          "_cid": "rhKBEMtctJ",
+          "_anchor": "footer3-2",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
